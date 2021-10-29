@@ -1,5 +1,5 @@
 #Path to your oh-my-zsh installation.
-export ZSH=/Users/aellispierce/.oh-my-zsh
+export ZSH="/Users/ashleyellispierce/.oh-my-zsh"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -8,7 +8,6 @@ export ZSH=/Users/aellispierce/.oh-my-zsh
 ZSH_THEME="dstufft"
 
 export PATH="$HOME/.bin:$PATH"
-eval "$(rbenv init - --no-rehash)"
 
 export PATH=~/.npm-global/bin:$PATH
 
@@ -48,9 +47,10 @@ front_matter
   cd ../
   vim .
 }
-. $HOME/.asdf/asdf.sh
-. $HOME/.asdf/completions/asdf.bash
-export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
-export PATH="/usr/local/opt/node@14/bin:$PATH"
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
+
+[ -f /opt/dev/dev.sh ] && source /opt/dev/dev.sh
+
+[[ -f /opt/dev/sh/chruby/chruby.sh ]] && type chruby >/dev/null 2>&1 || chruby () { source /opt/dev/sh/chruby/chruby.sh; chruby "$@"; }
+
+[[ -x /usr/local/bin/brew ]] && eval $(/usr/local/bin/brew shellenv)
