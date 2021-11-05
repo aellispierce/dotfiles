@@ -18,7 +18,7 @@ alias dbp="bin/rake db:migrate db:test:prepare"
 alias path='echo $PATH | tr -s ":" "\n"'
 
 # Path helpers
-alias gh="cd ~/github/github"
+alias shop="cd ~/src/github.com/Shopify"
 
 # Weather
 alias wttr="curl wttr.in/durham"
