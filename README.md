@@ -1,7 +1,4 @@
-A fork of thoughtbot dotfiles
 ===================
-
-![prompt](http://images.thoughtbot.com/thoughtbot-dotfiles-prompt.png)
 
 Requirements
 ------------
@@ -44,6 +41,16 @@ configuration options:
   `~/dotfiles-local`
 * Please configure the `rcrc` file if you'd like to make personal
   overrides in a different directory
+
+Install TMUX:
+
+    brew install tmux
+
+Install reattach-to-user-namespace:
+
+    brew install reattach-to-user-namespace
+
+This enables copying and pasting in tmux
 
 
 Update
