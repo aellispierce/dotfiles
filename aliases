@@ -1,4 +1,4 @@
-# Unix
+# jnix
 alias ll="ls -al"
 alias ln="ln -v"
 alias mkdir="mkdir -p"
@@ -21,7 +21,7 @@ alias path='echo $PATH | tr -s ":" "\n"'
 alias shop="cd ~/src/github.com/Shopify"
 
 # Weather
-alias wttr="curl wttr.in/durham"
+alias wttr="curl wttr.in"
 
 #Git
 alias g="git"
