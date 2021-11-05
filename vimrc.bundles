@@ -14,7 +14,6 @@ let g:tslime_always_current_session = 1
 let g:tslime_always_current_window = 1
 let g:has_async = v:version >= 800 || has('nvim')
 let g:snipMate = { 'snippet_version' : 1 }
-let g:deoplete#enable_at_startup = 1
 
 call plug#begin('~/.vim/bundle')
 
@@ -59,10 +58,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'mattn/emmet-vim'
 Plug 'MaxMEllon/vim-jsx-pretty'
-Plug 'Shougo/deoplete.nvim'
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'jiangmiao/auto-pairs'
+Plug 'ctrlpvim/ctrlp.vim'
 
 
 if g:has_async
