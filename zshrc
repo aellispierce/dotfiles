@@ -15,7 +15,7 @@ plugins=(history-substring-search)
 
 export EDITOR="vim"
 
-export PATH="/Users/aellispierce/.rbenv/shims:/Users/aellispierce/.bin:.git/safe/../../bin:/usr/local/sbin:/Users/aellispierce/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/Users/ashleyellispierce/.rbenv/shims:/Users/ashleyellispierce/.bin:.git/safe/../../bin:/usr/local/sbin:/Users/ashleyellispierce/.rbenv/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
