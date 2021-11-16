@@ -11,6 +11,9 @@ nnoremap <leader>= :wincmd =<cr>
 " Easy access to the start of the line
 nmap 0 ^
 
+" Open the directory file tree
+nmap <leader>ft :Explore<cr>
+
 " Split edit vimrc
 nmap <leader>vr :sp ~/dotfiles/vimrc<cr>
 
