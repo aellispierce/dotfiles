@@ -72,6 +72,8 @@ inoremap jj <Esc>
 " Also switch on highlighting the last used search pattern.
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
+  " Use new regular expression engine to spped up highlighting in typescript
+  set re=0
 endif
 
 if filereadable(expand("~/.vimrc.bundles"))
