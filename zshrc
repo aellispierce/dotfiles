@@ -24,6 +24,10 @@ source $ZSH/oh-my-zsh.sh
 bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
 
+
+setopt PROMPT_SUBST
+PROMPT=${PROMPT/\%~/\%c}
+
 # vi mode
 bindkey -v
 bindkey "^F" vi-cmd-mode
@@ -31,6 +35,16 @@ bindkey jj vi-cmd-mode
 
 # Set personal aliases
 source ~/.aliases
+
+# # Pull PRs from forks
+function gco-pr() {
+    if [ "$1" != "" ]
+    then
+      git fetch ${2-origin} pull/$1/head:pr/$1 && git checkout pr/$1
+    else
+        echo "PR number is required. Remote is optional e.g. 'gco-pr 123 origin'"
+    fi
+}
 
 # Start a new blog post
 function new_post() {

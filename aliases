@@ -39,6 +39,7 @@ alias gd="git diff"
 alias grm="git rebase master"
 alias gmm="git fetch && git merge origin/master"
 
+
 # Include custom aliases
 if [[ -f ~/.aliases.local ]]; then
   source ~/.aliases.local

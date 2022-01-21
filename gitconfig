@@ -48,5 +48,6 @@
   useConfigOnly = true
   name = Ashley Ellis Pierce
   signingkey = 1E41DEAF24B6FF06D4FE1FB268F51E12B0B81F4D
+	email = ashley.ellispierce@shopify.com
 [gpg]
         program = /nix/var/nix/gcroots/dev-profiles/dev-support-dev-profile/bin/gpg-auto-pin

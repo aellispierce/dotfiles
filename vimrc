@@ -44,7 +44,7 @@ map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
 
 "run commands with a custom runner if in github/github
-let test#runners = {'Ruby': ['GitHub']}
+let test#runners = {'Ruby': ['GitHub', 'RubyGems']}
 
 "see the diff of the current file
 map <leader>d :!clear && git diff %<cr>
