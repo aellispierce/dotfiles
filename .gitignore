@@ -1,2 +1,20 @@
 !bin
 vim/bundle/
+
+# Claude Code — exclude cache, session data, and secrets; keep config only
+claude/history.jsonl
+claude/sessions/
+claude/paste-cache/
+claude/statsig/
+claude/telemetry/
+claude/todos/
+claude/cache/
+claude/shell-snapshots/
+claude/mcp-needs-auth-cache.json
+claude/stats-cache.json
+claude/policy-limits.json
+claude/.last-cleanup
+claude/settings.local.json
+
+# Local overrides (machine-specific, secrets)
+*.local

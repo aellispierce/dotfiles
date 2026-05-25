@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "rails-docs": {
+      "command": "rails-mcp-server",
+      "args": [],
+      "env": {
+        "RBENV_VERSION": "3.3.0"
+      }
+    }
+  }
+}
